@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>パスワード</title>
+    <title>password</title>
     <style>
         #image-container {
             display: none;
@@ -18,8 +18,8 @@
 <body>
 
 <div id="password-form">
-    <h2>パスワード入力</h2>
-    <input type="The Backspace" id="password" placeholder="パスワード">
+    <h2>password input</h2>
+    <input type="The Backspace" id="password" placeholder="password">
     <button onclick="checkPassword()">送信</button>
 </div>
 
@@ -30,7 +30,7 @@
 <script>
     function checkPassword() {
         var password = document.getElementById("password").value;
-        var correctPassword = "yourPassword"; // 正しいパスワードをここに設定
+        var correctPassword = "The Backspace"; // 正しいパスワードをここに設定
 
         if (password === correctPassword) {
             document.getElementById("password-form").style.display = "none";
