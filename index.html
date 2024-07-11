@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パスワード</title>
+    <style>
+        #image-container {
+            display: none;
+            text-align: center;
+        }
+        #password-form {
+            text-align: center;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="password-form">
+    <h2>パスワード入力</h2>
+    <input type="The Backspace" id="password" placeholder="パスワード">
+    <button onclick="checkPassword()">送信</button>
+</div>
+
+<div id="image-container">
+    <img src="00047-1211082536.png" alt="画像">
+</div>
+
+<script>
+    function checkPassword() {
+        var password = document.getElementById("password").value;
+        var correctPassword = "yourPassword"; // 正しいパスワードをここに設定
+
+        if (password === correctPassword) {
+            document.getElementById("password-form").style.display = "none";
+            document.getElementById("image-container").style.display = "block";
+        } else {
+            alert("パスワードが間違っています。");
+        }
+    }
+</script>
+
+</body>
+</html>
